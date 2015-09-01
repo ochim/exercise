@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  HealthcareSample
+
+  Created by 越智 宗洋 on 2015/09/01.
+  Copyright (c) 2015年 ochi. All rights reserved.
+*/
+"VALIDATION_MESSAGE" = "0より大きい数値入力が必要です";
+"SAVE_ON_HEALTHCARE" = "ヘルスケアに保存しました";
