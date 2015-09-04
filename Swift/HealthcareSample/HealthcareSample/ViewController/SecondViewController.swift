@@ -8,11 +8,12 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: FirstViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.inputItems.addObject("ダッシュボード")
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,27 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /*
+    Cellが選択された際に呼び出されるデリゲートメソッド.
+    */
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+            println("choice: \(indexPath.row)")
+        case 1:
+            println("choice: \(indexPath.row)")
+        case 2:
+            println("choice: \(indexPath.row)")
+        case 3:
+            println("choice: \(indexPath.row)")
+            performSegueWithIdentifier("DashboardSegue",sender: nil)
+
+        default :
+            println("Default: \(indexPath.row)")
+        }
+        
+    }
 
 }
 

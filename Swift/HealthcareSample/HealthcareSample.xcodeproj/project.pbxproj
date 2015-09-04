@@ -28,6 +28,7 @@
 		BFAB02191B8EB393003E2D90 /* HealthItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAB02181B8EB393003E2D90 /* HealthItem.swift */; };
 		BFAB021B1B8EF68F003E2D90 /* SimpleAlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAB021A1B8EF68F003E2D90 /* SimpleAlertBuilder.swift */; };
 		BFAE9F151B95AB2500AB9BEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9F141B95AB2500AB9BEC /* Localizable.strings */; };
+		BFAE9F171B97FD5200AB9BEC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9F161B97FD5200AB9BEC /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		BFAB02181B8EB393003E2D90 /* HealthItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthItem.swift; sourceTree = "<group>"; };
 		BFAB021A1B8EF68F003E2D90 /* SimpleAlertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAlertBuilder.swift; sourceTree = "<group>"; };
 		BFAE9F141B95AB2500AB9BEC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BFAE9F161B97FD5200AB9BEC /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				BFAB02031B8D8AF6003E2D90 /* InputPulseViewController.swift */,
 				BFAB02041B8D8AF6003E2D90 /* InputWeightViewController.swift */,
 				BFAB02051B8D8AF6003E2D90 /* SecondViewController.swift */,
+				BFAE9F161B97FD5200AB9BEC /* DashboardViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				BFAB02111B8D8B0D003E2D90 /* HKHealthStoreUtility.swift in Sources */,
 				BF1B98211B12C78E00E52BE1 /* AppDelegate.swift in Sources */,
 				BFAB02191B8EB393003E2D90 /* HealthItem.swift in Sources */,
+				BFAE9F171B97FD5200AB9BEC /* DashboardViewController.swift in Sources */,
 				BFAB020C1B8D8AF6003E2D90 /* InputWeightViewController.swift in Sources */,
 				BFAB02081B8D8AF6003E2D90 /* InputHeightViewController.swift in Sources */,
 				BFAB02131B8DA698003E2D90 /* Height.swift in Sources */,
