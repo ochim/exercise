@@ -12,7 +12,9 @@ directories.each do |directory|
 		path = year + "/" + month + "/" + day
 		puts path
 
-		FileUtils.mkdir_p(path)
+		unless FileTest.exist?(path)
+			FileUtils.mkdir_p(path)
+		end
 
 		filelist = Dir.entries(directory)
 		filelist.each do |filename|
