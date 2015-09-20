@@ -9,7 +9,7 @@ directories.each do |directory|
 		year = directory[0..3]
 		month = directory[4..5]
 		day = directory[6..7]
-		path = year + "/" + month + "/" + day
+		path = "../attendees/" + year + "/" + month + "/" + day
 		puts path
 
 		unless FileTest.exist?(path)
