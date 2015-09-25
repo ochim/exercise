@@ -14,7 +14,7 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var height: Height = Height()
-        height.findAllItemValues()
+        height.findAllItemValues({responseObj, error in})
     }
     
     override func didReceiveMemoryWarning() {

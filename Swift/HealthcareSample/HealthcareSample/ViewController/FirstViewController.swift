@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let inputItems: NSMutableArray = ["身長", "体重", "心拍数"]
+    var inputItems: NSMutableArray = ["身長", "体重", "心拍数"]
     var myTableView: UITableView!
 
     override func viewDidLoad() {

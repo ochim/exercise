@@ -20,7 +20,7 @@ class HealthItem: NSObject {
         HKHealthStoreUtility.saveHealthValueWithUnit(unit, type: type, valueStr: valueString, startDate: startDate, endDate: endDate, completion: completion)
     }
     
-    func findAllItemValues() {
+    func findAllItemValues(completion: ((responseObj: [AnyObject]!, error: NSError!) -> Void)) {
         
         // 取得処理完了時に非同期で呼び出されます。
         HKHealthStoreUtility.findAllHealthValueWithUnit(self.unit, type: self.type , completion: {
@@ -28,6 +28,7 @@ class HealthItem: NSObject {
             
             if error != nil {
                 NSLog(error.description)
+                completion(responseObj: responseObj, error: error)
                 return
             }
             

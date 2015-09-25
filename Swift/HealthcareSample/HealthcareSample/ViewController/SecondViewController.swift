@@ -13,6 +13,7 @@ class SecondViewController: FirstViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.inputItems.removeAllObjects()
         self.inputItems.addObject("ダッシュボード")
     }
 
@@ -26,21 +27,14 @@ class SecondViewController: FirstViewController, UITableViewDelegate, UITableVie
     */
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        println("choice: \(indexPath.row)")
         switch indexPath.row {
         case 0:
-            println("choice: \(indexPath.row)")
-        case 1:
-            println("choice: \(indexPath.row)")
-        case 2:
-            println("choice: \(indexPath.row)")
-        case 3:
-            println("choice: \(indexPath.row)")
             performSegueWithIdentifier("DashboardSegue",sender: nil)
 
         default :
             println("Default: \(indexPath.row)")
         }
-        
     }
 
 }
