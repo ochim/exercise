@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var heights: [HealthItem]? = []
     var weights: [HealthItem]? = []
     var pulses: [HealthItem]? = []
@@ -45,7 +45,12 @@ class DashboardViewController: UIViewController {
             }
             self.pulses! = healthItems!
         })
-
+        
+        myTableView.dataSource = self
+        myTableView.delegate = self
+        
+        mySegmentedControl.selectedSegmentIndex = 0;
+        mySegmentedControl.addTarget(self, action: "segmentedControlChanged:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,6 +65,54 @@ class DashboardViewController: UIViewController {
             return true
         }
         return false
+    }
+
+    func segmentedControlChanged(sender: UISegmentedControl) {
+        println(sender.selectedSegmentIndex)
+        myTableView.reloadData()
+    }
+
+    
+    /*
+    Cellが選択された際に呼び出されるデリゲートメソッド.
+    */
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    }
+    
+    /*
+    Cellの総数を返すデータソースメソッド.
+    */
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let index: Int = mySegmentedControl.selectedSegmentIndex
+        switch index {
+        case 0:
+            return 1
+        case 1:
+            return 2
+        case 2:
+            return 3
+        default:
+            return 0
+        }
+    }
+    
+    /*
+    Cellに値を設定するデータソースメソッド.
+    */
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        // 再利用するCellを取得する.
+        var cell = tableView.dequeueReusableCellWithIdentifier("OutputItemCell") as? UITableViewCell
+        
+        if cell == nil {
+            var cell: UITableViewCell! = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "OutputItemCell")
+        }
+        
+        //we know that cell is not empty now so we use ! to force unwrapping
+        
+        cell!.textLabel?.text = "Baking Soda"
+        cell!.detailTextLabel?.text = "cup"
+        return cell!
     }
     
 }
