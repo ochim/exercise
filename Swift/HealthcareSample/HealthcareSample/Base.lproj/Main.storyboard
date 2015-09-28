@@ -99,9 +99,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wAO-zB-Lb9">
-                                <rect key="frame" x="220" y="84" width="200" height="29"/>
+                                <rect key="frame" x="150" y="90" width="300" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="123" id="FXd-tq-R9y"/>
+                                    <constraint firstAttribute="width" constant="200" id="FXd-tq-R9y"/>
                                 </constraints>
                                 <segments>
                                     <segment title="身長"/>
@@ -109,6 +109,10 @@
                                     <segment title="心拍数"/>
                                 </segments>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0HL-A0-W1y">
+                                <rect key="frame" x="0.0" y="136" width="608" height="464"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -116,6 +120,10 @@
                             <constraint firstItem="wAO-zB-Lb9" firstAttribute="centerX" secondItem="L2Y-IZ-nBh" secondAttribute="centerX" id="qdy-jP-tsc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mySegmentedControl" destination="wAO-zB-Lb9" id="s2U-hF-WD3"/>
+                        <outlet property="myTableView" destination="0HL-A0-W1y" id="bf4-lM-nwu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47s-OK-tRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
