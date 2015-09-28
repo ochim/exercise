@@ -20,7 +20,7 @@ class HealthItem: NSObject {
         HKHealthStoreUtility.saveHealthValueWithUnit(unit, type: type, valueStr: valueString, startDate: startDate, endDate: endDate, completion: completion)
     }
     
-    func findAllItemValues(completion: ((responseObj: [AnyObject]!, error: NSError!) -> Void)) {
+    func findAllItemsOnHealthcare(completion: (responseObjects:[HealthItem]?, error: NSError?) -> Void) {
         
         // 取得処理完了時に非同期で呼び出されます。
         HKHealthStoreUtility.findAllHealthValueWithUnit(self.unit, type: self.type , completion: {
@@ -28,7 +28,7 @@ class HealthItem: NSObject {
             
             if error != nil {
                 NSLog(error.description)
-                completion(responseObj: responseObj, error: error)
+                completion(responseObjects:nil, error: error!)
                 return
             }
             
@@ -37,18 +37,24 @@ class HealthItem: NSObject {
             NSLog("resultObj : \(responseObj)")
             
             let btUnit: HKUnit = self.unit
-            
-            
-            var btResults: [Double!] = []
+            var healthItems: [HealthItem]? = []
             
             // HealthStoreで使用していた型から値へと復元します。
-            for healthItem: HKQuantitySample in responseObj as! [HKQuantitySample] {
+            for item: HKQuantitySample in responseObj as! [HKQuantitySample] {
                 // 値を取得します。
-                let btQuantity: HKQuantity! = healthItem.quantity
+                let btQuantity: HKQuantity! = item.quantity
                 let btResult: Double = btQuantity.doubleValueForUnit(btUnit)
-                btResults.append(btResult);
+                
+                var healthItem = HealthItem()
+                healthItem.unit = self.unit
+                healthItem.type = self.type
+                healthItem.valueString = NSString(format: "%f", btResult)
+                healthItem.startDate = item.startDate
+                healthItem.endDate = item.endDate
+                
+                healthItems!.append(healthItem)
             }
-            NSLog("values : \(btResults)")
+            completion(responseObjects: healthItems!, error: nil)
         })
     }
 }

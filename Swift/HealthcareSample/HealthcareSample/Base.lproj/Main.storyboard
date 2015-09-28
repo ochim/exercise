@@ -98,15 +98,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wAO-zB-Lb9">
-                                <rect key="frame" x="239" y="84" width="123" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wAO-zB-Lb9">
+                                <rect key="frame" x="220" y="84" width="200" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="123" id="FXd-tq-R9y"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title="Third"/>
+                                    <segment title="身長"/>
+                                    <segment title="体重"/>
+                                    <segment title="心拍数"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
