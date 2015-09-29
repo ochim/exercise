@@ -75,7 +75,9 @@ class HKHealthStoreUtility: NSObject {
         
         // HealthStoreのデータを全件取得するHKSampleQueryを返却します。
         let findAllQuery : () -> HKSampleQuery = {
-            return HKSampleQuery(sampleType: type, predicate: nil, limit: 0, sortDescriptors: nil, resultsHandler: completion)
+            // startDateの降順でソート
+            let startDate: NSSortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
+            return HKSampleQuery(sampleType: type, predicate: nil, limit: 0, sortDescriptors: [startDate], resultsHandler: completion)
         }
         
         let types: Set<NSObject>! = Set(arrayLiteral: type)
