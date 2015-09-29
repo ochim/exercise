@@ -135,7 +135,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func formattedStringFromDate(date: NSDate) -> String {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
         dateFormatter.locale = NSLocale.currentLocale()
         return dateFormatter.stringFromDate(date)
     }
