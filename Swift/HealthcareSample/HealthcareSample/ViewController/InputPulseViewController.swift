@@ -15,6 +15,7 @@ class InputPulseViewController: InputItemViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "心拍数（脈拍）"
         numberUnitLabel.text = "単位 拍/分"
+        numberField.keyboardType = UIKeyboardType.NumberPad
         numberField.delegate = self
         dateField.delegate = self
         
