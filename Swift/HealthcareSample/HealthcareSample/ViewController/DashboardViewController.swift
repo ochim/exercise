@@ -86,11 +86,11 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         let index: Int = mySegmentedControl.selectedSegmentIndex
         switch index {
         case 0:
-            return 1
+            return self.heights!.count
         case 1:
-            return 2
+            return self.weights!.count
         case 2:
-            return 3
+            return self.pulses!.count
         default:
             return 0
         }
@@ -108,11 +108,35 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             var cell: UITableViewCell! = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "OutputItemCell")
         }
         
-        //we know that cell is not empty now so we use ! to force unwrapping
+        let index: Int = mySegmentedControl.selectedSegmentIndex
+        switch index {
+        case 0:
+            let height: HealthItem = self.heights![indexPath.row]
+            cell!.textLabel?.text = String(format: "%.2f cm", height.valueString.doubleValue * 100)
+            cell!.detailTextLabel?.text = self.formattedStringFromDate(height.startDate)
+            
+        case 1:
+            let weight: HealthItem = self.weights![indexPath.row]
+            cell!.textLabel?.text = String(format: "%.2f kg", weight.valueString.doubleValue / 1000)
+            cell!.detailTextLabel?.text = self.formattedStringFromDate(weight.startDate)
+
+        case 2:
+            let pulse: HealthItem = self.pulses![indexPath.row]
+            cell!.textLabel?.text = String(format: "%.f 拍/分", pulse.valueString.doubleValue)
+            cell!.detailTextLabel?.text = self.formattedStringFromDate(pulse.startDate)
         
-        cell!.textLabel?.text = "Baking Soda"
-        cell!.detailTextLabel?.text = "cup"
+        default:
+            cell!.textLabel?.text = "hoge"
+            cell!.detailTextLabel?.text = "foo"
+        }
+        
         return cell!
     }
     
+    func formattedStringFromDate(date: NSDate) -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        dateFormatter.locale = NSLocale.currentLocale()
+        return dateFormatter.stringFromDate(date)
+    }
 }
