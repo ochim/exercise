@@ -73,7 +73,7 @@ class InputHeightViewController: InputItemViewController,UITextFieldDelegate {
         
 //        // 任意の日付を指定
 //        let dateFormatter = NSDateFormatter()
-//        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss";
+//        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss";
 //        let oneDate = dateFormatter.dateFromString("2015-08-01 00:00:00")!;
 //        height.startDate = oneDate
 //        height.endDate = oneDate

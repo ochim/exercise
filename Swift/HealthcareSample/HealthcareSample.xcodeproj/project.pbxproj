@@ -13,7 +13,6 @@
 		BF1B982D1B12C78E00E52BE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1B982B1B12C78E00E52BE1 /* LaunchScreen.xib */; };
 		BF1B98391B12C78E00E52BE1 /* HealthcareSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B98381B12C78E00E52BE1 /* HealthcareSampleTests.swift */; };
 		BF95A11F1B1849C100AF9F01 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF95A11E1B1849C100AF9F01 /* HealthKit.framework */; };
-		BFAB02061B8D8AF6003E2D90 /* MyDecimalPadTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAB01FD1B8D8AF6003E2D90 /* MyDecimalPadTextField.swift */; };
 		BFAB02071B8D8AF6003E2D90 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAB01FF1B8D8AF6003E2D90 /* FirstViewController.swift */; };
 		BFAB02081B8D8AF6003E2D90 /* InputHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAB02001B8D8AF6003E2D90 /* InputHeightViewController.swift */; };
 		BFAB02091B8D8AF6003E2D90 /* InputItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAB02011B8D8AF6003E2D90 /* InputItemViewController.swift */; };
@@ -53,7 +52,6 @@
 		BF1B98381B12C78E00E52BE1 /* HealthcareSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthcareSampleTests.swift; sourceTree = "<group>"; };
 		BF95A11E1B1849C100AF9F01 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BF95A1201B1849C100AF9F01 /* HealthcareSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HealthcareSample.entitlements; sourceTree = "<group>"; };
-		BFAB01FD1B8D8AF6003E2D90 /* MyDecimalPadTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDecimalPadTextField.swift; sourceTree = "<group>"; };
 		BFAB01FF1B8D8AF6003E2D90 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		BFAB02001B8D8AF6003E2D90 /* InputHeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputHeightViewController.swift; sourceTree = "<group>"; };
 		BFAB02011B8D8AF6003E2D90 /* InputItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputItemViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 		BFAB01FC1B8D8AF6003E2D90 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BFAB01FD1B8D8AF6003E2D90 /* MyDecimalPadTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,7 +313,6 @@
 				BFAB02131B8DA698003E2D90 /* Height.swift in Sources */,
 				BFAB021B1B8EF68F003E2D90 /* SimpleAlertBuilder.swift in Sources */,
 				BFAB020B1B8D8AF6003E2D90 /* InputPulseViewController.swift in Sources */,
-				BFAB02061B8D8AF6003E2D90 /* MyDecimalPadTextField.swift in Sources */,
 				BFAB02091B8D8AF6003E2D90 /* InputItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
