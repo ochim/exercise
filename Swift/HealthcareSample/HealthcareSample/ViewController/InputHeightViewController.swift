@@ -71,13 +71,6 @@ class InputHeightViewController: InputItemViewController,UITextFieldDelegate {
         height.startDate = NSDate();
         height.endDate = NSDate();
         
-//        // 任意の日付を指定
-//        let dateFormatter = NSDateFormatter()
-//        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss";
-//        let oneDate = dateFormatter.dateFromString("2015-08-01 00:00:00")!;
-//        height.startDate = oneDate
-//        height.endDate = oneDate
-
         // ヘルスケアに身長データを保存
         // 同じ日時で保存しても別データ扱い
         height.save { (success, error) -> Void in
