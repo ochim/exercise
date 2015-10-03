@@ -28,19 +28,16 @@ class InputWeightViewController: InputItemViewController,UITextFieldDelegate {
     
     //編集直後
     func textFieldDidBeginEditing(textField: UITextField){
-        println("textFieldDidBeginEditing:" + textField.text)
     }
     
     //編集完了後（完了直前）
     func textFieldShouldEndEditing(textField: UITextField) -> Bool {
-        println("textFieldShouldEndEditing:" + textField.text)
         return true
     }
     
     //編集完了後（完了直後）
     func textFieldDidEndEditing(textField: UITextField){
         textField.resignFirstResponder()
-        println("textFieldDidEndEditing:" + textField.text)
     }
     
     //改行時
@@ -51,15 +48,15 @@ class InputWeightViewController: InputItemViewController,UITextFieldDelegate {
     
     override func tapSaveButton(sender: UIButton){
         numberField.resignFirstResponder();
-        println("save")
+        print("save")
         saveWeight()
     }
     
     func saveWeight() {
-        var tempValue: Double? = NSString(string: numberField.text).doubleValue
+        var tempValue: Double = NSString(string: numberField.text!).doubleValue
         
         if (tempValue == 0) {
-            println("入力必須")
+            print("入力必須")
             var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: NSLocalizedString("VALIDATION_MESSAGE", comment: "comment"))
             self.presentViewController(builder.alertController, animated: true, completion: nil)
             return
@@ -67,14 +64,14 @@ class InputWeightViewController: InputItemViewController,UITextFieldDelegate {
         
         var weight: Weight = Weight()
         // 値をgに変換
-        weight.valueString = NSString(format: "\(tempValue! * 1000)")
+        weight.valueString = NSString(format: "\(tempValue * 1000)")
         weight.startDate = NSDate();
         weight.endDate = NSDate();
         
         // ヘルスケアに体重データを保存
         weight.save { (success, error) -> Void in
             if error != nil {
-                var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: error.localizedDescription)
+                var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: error!.localizedDescription)
                 self.presentViewController(builder.alertController, animated: true, completion: nil)
                 return
             }

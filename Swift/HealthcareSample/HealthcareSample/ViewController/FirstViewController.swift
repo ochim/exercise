@@ -48,8 +48,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     Cellが選択された際に呼び出されるデリゲートメソッド.
     */
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("Num: \(indexPath.row)")
-        println("Value: \(inputItems[indexPath.row])")
+        print("Num: \(indexPath.row)")
+        print("Value: \(inputItems[indexPath.row])")
         
         switch indexPath.row {
             case 0:
@@ -59,7 +59,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             case 2:
                 performSegueWithIdentifier("InputPulseSegue",sender: nil)
             default :
-                println("Default: \(indexPath.row)")
+                print("Default: \(indexPath.row)")
         }
         
     }
@@ -77,7 +77,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // 再利用するCellを取得する.
-        var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("InputItemCell") as! UITableViewCell
+        let cell:UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("InputItemCell")
         
         // Cellに値を設定する.
         cell.textLabel?.text = "\(inputItems[indexPath.row])"

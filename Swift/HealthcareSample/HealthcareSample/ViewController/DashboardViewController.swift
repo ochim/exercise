@@ -19,7 +19,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var height: Height = Height()
+        let height: Height = Height()
         height.findAllItemsOnHealthcare({healthItems, error in
             
             if self.showErrorAlert(error) {
@@ -28,7 +28,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             self.heights! = healthItems!
         })
         
-        var weight: Weight = Weight()
+        let weight: Weight = Weight()
         weight.findAllItemsOnHealthcare({healthItems, error in
             
             if self.showErrorAlert(error) {
@@ -37,7 +37,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             self.weights! = healthItems!
         })
         
-        var pulse: Pulse = Pulse()
+        let pulse: Pulse = Pulse()
         pulse.findAllItemsOnHealthcare({healthItems, error in
             
             if self.showErrorAlert(error) {
@@ -60,7 +60,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func showErrorAlert(error :NSError?) -> Bool {
         if error != nil {
-            var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: error!.localizedDescription)
+            let builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: error!.localizedDescription)
             self.presentViewController(builder.alertController, animated: true, completion: nil)
             return true
         }
@@ -68,7 +68,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     func segmentedControlChanged(sender: UISegmentedControl) {
-        println(sender.selectedSegmentIndex)
+        print(sender.selectedSegmentIndex)
         myTableView.reloadData()
     }
 
@@ -102,11 +102,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // 再利用するCellを取得する.
-        var cell = tableView.dequeueReusableCellWithIdentifier("OutputItemCell") as? UITableViewCell
-        
-        if cell == nil {
-            var cell: UITableViewCell! = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "OutputItemCell")
-        }
+        var cell = tableView.dequeueReusableCellWithIdentifier("OutputItemCell")
         
         let index: Int = mySegmentedControl.selectedSegmentIndex
         switch index {

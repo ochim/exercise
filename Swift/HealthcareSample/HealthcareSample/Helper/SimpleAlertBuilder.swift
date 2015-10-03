@@ -22,7 +22,7 @@ class SimpleAlertBuilder: NSObject {
         let cancelAction:UIAlertAction = UIAlertAction(title: "OK",
             style: UIAlertActionStyle.Cancel,
             handler:{
-                (action:UIAlertAction!) -> Void in
+                (action:UIAlertAction) -> Void in
         })
         
         alertController.addAction(cancelAction)

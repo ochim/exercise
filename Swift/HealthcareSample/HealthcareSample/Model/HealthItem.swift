@@ -16,7 +16,7 @@ class HealthItem: NSObject {
     var startDate : NSDate!
     var endDate : NSDate!
     
-    func save(completion: ((success: Bool, error: NSError!) -> Void)) {
+    func save(completion: ((success: Bool, error: NSError?) -> Void)) {
         HKHealthStoreUtility.saveHealthValueWithUnit(unit, type: type, valueStr: valueString, startDate: startDate, endDate: endDate, completion: completion)
     }
     
@@ -27,7 +27,7 @@ class HealthItem: NSObject {
             query, responseObj, error in
             
             if error != nil {
-                NSLog(error.description)
+                NSLog(error!.description)
                 completion(responseObjects:nil, error: error!)
                 return
             }
@@ -45,7 +45,7 @@ class HealthItem: NSObject {
                 let btQuantity: HKQuantity! = item.quantity
                 let btResult: Double = btQuantity.doubleValueForUnit(btUnit)
                 
-                var healthItem = HealthItem()
+                let healthItem = HealthItem()
                 healthItem.unit = self.unit
                 healthItem.type = self.type
                 healthItem.valueString = NSString(format: "%f", btResult)

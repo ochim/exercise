@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: FirstViewController, UITableViewDelegate, UITableViewDataSource {
+class SecondViewController: FirstViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +27,13 @@ class SecondViewController: FirstViewController, UITableViewDelegate, UITableVie
     */
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        println("choice: \(indexPath.row)")
+        print("choice: \(indexPath.row)")
         switch indexPath.row {
         case 0:
             performSegueWithIdentifier("DashboardSegue",sender: nil)
 
         default :
-            println("Default: \(indexPath.row)")
+            print("Default: \(indexPath.row)")
         }
     }
 

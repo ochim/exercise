@@ -15,14 +15,14 @@ class HKHealthStoreUtility: NSObject {
     引数に渡された文字列を指定のデータへ変換してHealthStoreへ永続化します。
     渡される文字列は、Double型へキャスト出来る形式である必要があります。
     
-    :param: unit       健康情報の単位型
-    :param: type       健康情報のデータ型
-    :param: valueStr   データ文字列
-    :param: startDate  計測開始日
-    :param: endDate   計測終了日
-    :param: completion 永続化処理完了時に実行される処理
+    - parameter unit:       健康情報の単位型
+    - parameter type:       健康情報のデータ型
+    - parameter valueStr:   データ文字列
+    - parameter startDate:  計測開始日
+    - parameter endDate:   計測終了日
+    - parameter completion: 永続化処理完了時に実行される処理
     */
-    static func saveHealthValueWithUnit(unit: HKUnit! , type: HKQuantityType!, valueStr: NSString!, startDate: NSDate!, endDate: NSDate!, completion: ((success: Bool, error: NSError!) -> Void)) {
+    static func saveHealthValueWithUnit(unit: HKUnit! , type: HKQuantityType!, valueStr: NSString!, startDate: NSDate!, endDate: NSDate!, completion: ((success: Bool, error: NSError?) -> Void)) {
 
         let healthStore: HKHealthStore = HKHealthStore()
         
@@ -35,7 +35,7 @@ class HKHealthStoreUtility: NSObject {
         
         // 健康情報のデータ型を保持したNSSetオブジェクトを生成します。
         // 永続化したい情報が複数ある場合はobjectに複数のデータ型配列を設定します。
-        let types: Set<NSObject>! = Set(arrayLiteral: type)
+        let types: Set<HKSampleType>! = Set(arrayLiteral: type)
         
         let authStatus:HKAuthorizationStatus = healthStore.authorizationStatusForType(type)
         
@@ -51,12 +51,12 @@ class HKHealthStoreUtility: NSObject {
                 success, error in
                 
                 if error != nil {
-                    println(error.description);
+                    print(error!.description);
                     return
                 }
                 
                 if success {
-                    println("保存可能");
+                    print("保存可能");
                     healthStore.saveObject(sample, withCompletion:completion)
                 }
             })
@@ -70,7 +70,7 @@ class HKHealthStoreUtility: NSObject {
     :param: type       取得したいデータ型
     :param: completion 取得完了時に実行される処理
     */
-    static func findAllHealthValueWithUnit(unit: HKUnit!, type: HKQuantityType!, completion: ((query: HKSampleQuery!, responseObj: [AnyObject]!, error: NSError!) -> Void)) {
+    static func findAllHealthValueWithUnit(unit: HKUnit!, type: HKQuantityType, completion: ((query: HKSampleQuery?, responseObj: [HKSample]?, error: NSError?) -> Void)) {
         let healthStore = HKHealthStore()
         
         // HealthStoreのデータを全件取得するHKSampleQueryを返却します。
@@ -80,7 +80,7 @@ class HKHealthStoreUtility: NSObject {
             return HKSampleQuery(sampleType: type, predicate: nil, limit: 0, sortDescriptors: [startDate], resultsHandler: completion)
         }
         
-        let types: Set<NSObject>! = Set(arrayLiteral: type)
+        let types: Set<HKSampleType>! = Set(arrayLiteral: type)
         
         let authStatus:HKAuthorizationStatus = healthStore.authorizationStatusForType(type)
         
@@ -95,12 +95,12 @@ class HKHealthStoreUtility: NSObject {
                 success, error in
                 
                 if error != nil {
-                    println(error.description);
+                    print(error!.description);
                     return
                 }
                 
                 if success {
-                    println("取得可能");
+                    print("取得可能");
                     // 引数に指定されたクエリーを実行します
                     healthStore.executeQuery(findAllQuery())
                 }
