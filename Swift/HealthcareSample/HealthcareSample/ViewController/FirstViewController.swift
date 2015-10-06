@@ -17,7 +17,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // Status Barの高さを取得する.
-        let barHeight: CGFloat = UIApplication.sharedApplication().statusBarFrame.size.height
+        let barHeight: CGFloat = UIApplication.sharedApplication().statusBarFrame.size.height + self.navigationController!.navigationBar.frame.size.height
         
         // Viewの高さと幅を取得する.
         let displayWidth: CGFloat = self.view.frame.width
