@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96003E1216B1355800ECF750 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96003E1116B1355800ECF750 /* UIKit.framework */; };
+		96003E1416B1355800ECF750 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96003E1316B1355800ECF750 /* Foundation.framework */; };
+		96003E1616B1355800ECF750 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96003E1516B1355800ECF750 /* CoreGraphics.framework */; };
+		96003E1C16B1355800ECF750 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96003E1A16B1355800ECF750 /* InfoPlist.strings */; };
+		96003E1E16B1355800ECF750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96003E1D16B1355800ECF750 /* main.m */; };
+		96003E2216B1355800ECF750 /* Exercise02AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96003E2116B1355800ECF750 /* Exercise02AppDelegate.m */; };
+		96003E2516B1355800ECF750 /* Exercise02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96003E2416B1355800ECF750 /* Exercise02ViewController.m */; };
+		96003E2816B1355800ECF750 /* Exercise02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96003E2616B1355800ECF750 /* Exercise02ViewController.xib */; };
+		96003E3216B137BB00ECF750 /* action.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96003E2E16B137BB00ECF750 /* action.wav */; };
+		96003E3316B137BB00ECF750 /* choki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96003E2F16B137BB00ECF750 /* choki.jpg */; };
+		96003E3416B137BB00ECF750 /* gu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96003E3016B137BB00ECF750 /* gu.jpg */; };
+		96003E3516B137BB00ECF750 /* pa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96003E3116B137BB00ECF750 /* pa.jpg */; };
+		96003E3716B137E500ECF750 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96003E3616B137E500ECF750 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96003E0D16B1355800ECF750 /* Exercise02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96003E1116B1355800ECF750 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96003E1316B1355800ECF750 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96003E1516B1355800ECF750 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96003E1916B1355800ECF750 /* Exercise02-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exercise02-Info.plist"; sourceTree = "<group>"; };
+		96003E1B16B1355800ECF750 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96003E1D16B1355800ECF750 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96003E1F16B1355800ECF750 /* Exercise02-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exercise02-Prefix.pch"; sourceTree = "<group>"; };
+		96003E2016B1355800ECF750 /* Exercise02AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise02AppDelegate.h; sourceTree = "<group>"; };
+		96003E2116B1355800ECF750 /* Exercise02AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise02AppDelegate.m; sourceTree = "<group>"; };
+		96003E2316B1355800ECF750 /* Exercise02ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise02ViewController.h; sourceTree = "<group>"; };
+		96003E2416B1355800ECF750 /* Exercise02ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise02ViewController.m; sourceTree = "<group>"; };
+		96003E2716B1355800ECF750 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Exercise02ViewController.xib; sourceTree = "<group>"; };
+		96003E2E16B137BB00ECF750 /* action.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = action.wav; sourceTree = "<group>"; };
+		96003E2F16B137BB00ECF750 /* choki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = choki.jpg; sourceTree = "<group>"; };
+		96003E3016B137BB00ECF750 /* gu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gu.jpg; sourceTree = "<group>"; };
+		96003E3116B137BB00ECF750 /* pa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pa.jpg; sourceTree = "<group>"; };
+		96003E3616B137E500ECF750 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96003E0A16B1355800ECF750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96003E3716B137E500ECF750 /* AudioToolbox.framework in Frameworks */,
+				96003E1216B1355800ECF750 /* UIKit.framework in Frameworks */,
+				96003E1416B1355800ECF750 /* Foundation.framework in Frameworks */,
+				96003E1616B1355800ECF750 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96003E0216B1355800ECF750 = {
+			isa = PBXGroup;
+			children = (
+				96003E3616B137E500ECF750 /* AudioToolbox.framework */,
+				96003E1716B1355800ECF750 /* Exercise02 */,
+				96003E1016B1355800ECF750 /* Frameworks */,
+				96003E0E16B1355800ECF750 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96003E0E16B1355800ECF750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96003E0D16B1355800ECF750 /* Exercise02.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96003E1016B1355800ECF750 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96003E1116B1355800ECF750 /* UIKit.framework */,
+				96003E1316B1355800ECF750 /* Foundation.framework */,
+				96003E1516B1355800ECF750 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96003E1716B1355800ECF750 /* Exercise02 */ = {
+			isa = PBXGroup;
+			children = (
+				96003E2E16B137BB00ECF750 /* action.wav */,
+				96003E2F16B137BB00ECF750 /* choki.jpg */,
+				96003E3016B137BB00ECF750 /* gu.jpg */,
+				96003E3116B137BB00ECF750 /* pa.jpg */,
+				96003E2016B1355800ECF750 /* Exercise02AppDelegate.h */,
+				96003E2116B1355800ECF750 /* Exercise02AppDelegate.m */,
+				96003E2316B1355800ECF750 /* Exercise02ViewController.h */,
+				96003E2416B1355800ECF750 /* Exercise02ViewController.m */,
+				96003E2616B1355800ECF750 /* Exercise02ViewController.xib */,
+				96003E1816B1355800ECF750 /* Supporting Files */,
+			);
+			path = Exercise02;
+			sourceTree = "<group>";
+		};
+		96003E1816B1355800ECF750 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96003E1916B1355800ECF750 /* Exercise02-Info.plist */,
+				96003E1A16B1355800ECF750 /* InfoPlist.strings */,
+				96003E1D16B1355800ECF750 /* main.m */,
+				96003E1F16B1355800ECF750 /* Exercise02-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96003E0C16B1355800ECF750 /* Exercise02 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96003E2B16B1355800ECF750 /* Build configuration list for PBXNativeTarget "Exercise02" */;
+			buildPhases = (
+				96003E0916B1355800ECF750 /* Sources */,
+				96003E0A16B1355800ECF750 /* Frameworks */,
+				96003E0B16B1355800ECF750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise02;
+			productName = Exercise02;
+			productReference = 96003E0D16B1355800ECF750 /* Exercise02.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96003E0416B1355800ECF750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 96003E0716B1355800ECF750 /* Build configuration list for PBXProject "Exercise02" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96003E0216B1355800ECF750;
+			productRefGroup = 96003E0E16B1355800ECF750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96003E0C16B1355800ECF750 /* Exercise02 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96003E0B16B1355800ECF750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96003E1C16B1355800ECF750 /* InfoPlist.strings in Resources */,
+				96003E2816B1355800ECF750 /* Exercise02ViewController.xib in Resources */,
+				96003E3216B137BB00ECF750 /* action.wav in Resources */,
+				96003E3316B137BB00ECF750 /* choki.jpg in Resources */,
+				96003E3416B137BB00ECF750 /* gu.jpg in Resources */,
+				96003E3516B137BB00ECF750 /* pa.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96003E0916B1355800ECF750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96003E1E16B1355800ECF750 /* main.m in Sources */,
+				96003E2216B1355800ECF750 /* Exercise02AppDelegate.m in Sources */,
+				96003E2516B1355800ECF750 /* Exercise02ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96003E1A16B1355800ECF750 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96003E1B16B1355800ECF750 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96003E2616B1355800ECF750 /* Exercise02ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96003E2716B1355800ECF750 /* en */,
+			);
+			name = Exercise02ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96003E2916B1355800ECF750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96003E2A16B1355800ECF750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96003E2C16B1355800ECF750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exercise02/Exercise02-Prefix.pch";
+				INFOPLIST_FILE = "Exercise02/Exercise02-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96003E2D16B1355800ECF750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exercise02/Exercise02-Prefix.pch";
+				INFOPLIST_FILE = "Exercise02/Exercise02-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96003E0716B1355800ECF750 /* Build configuration list for PBXProject "Exercise02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96003E2916B1355800ECF750 /* Debug */,
+				96003E2A16B1355800ECF750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96003E2B16B1355800ECF750 /* Build configuration list for PBXNativeTarget "Exercise02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96003E2C16B1355800ECF750 /* Debug */,
+				96003E2D16B1355800ECF750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96003E0416B1355800ECF750 /* Project object */;
+}

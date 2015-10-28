@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9649877D16BA641200BB8DB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9649877C16BA641200BB8DB1 /* UIKit.framework */; };
+		9649877F16BA641200BB8DB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9649877E16BA641200BB8DB1 /* Foundation.framework */; };
+		9649878116BA641300BB8DB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9649878016BA641200BB8DB1 /* CoreGraphics.framework */; };
+		9649878716BA641300BB8DB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9649878516BA641300BB8DB1 /* InfoPlist.strings */; };
+		9649878916BA641300BB8DB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9649878816BA641300BB8DB1 /* main.m */; };
+		9649878D16BA641300BB8DB1 /* Exercise04AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9649878C16BA641300BB8DB1 /* Exercise04AppDelegate.m */; };
+		9649879016BA641300BB8DB1 /* Exercise04ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9649878F16BA641300BB8DB1 /* Exercise04ViewController.m */; };
+		9649879316BA641300BB8DB1 /* Exercise04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9649879116BA641300BB8DB1 /* Exercise04ViewController.xib */; };
+		964987A216BA69F700BB8DB1 /* note8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9649879916BA69F700BB8DB1 /* note8.gif */; };
+		964987A316BA69F700BB8DB1 /* piano_do.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9649879A16BA69F700BB8DB1 /* piano_do.wav */; };
+		964987A416BA69F700BB8DB1 /* piano_do2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9649879B16BA69F700BB8DB1 /* piano_do2.wav */; };
+		964987A516BA69F700BB8DB1 /* piano_fa.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9649879C16BA69F700BB8DB1 /* piano_fa.wav */; };
+		964987A616BA69F700BB8DB1 /* piano_mi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9649879D16BA69F700BB8DB1 /* piano_mi.wav */; };
+		964987A716BA69F700BB8DB1 /* piano_ra.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9649879E16BA69F700BB8DB1 /* piano_ra.wav */; };
+		964987A816BA69F700BB8DB1 /* piano_re.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9649879F16BA69F700BB8DB1 /* piano_re.wav */; };
+		964987A916BA69F700BB8DB1 /* piano_si.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987A016BA69F700BB8DB1 /* piano_si.wav */; };
+		964987AA16BA69F700BB8DB1 /* piano_so.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987A116BA69F700BB8DB1 /* piano_so.wav */; };
+		964987AC16BA70B600BB8DB1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964987AB16BA70B600BB8DB1 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9649877816BA641200BB8DB1 /* Exercise04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise04.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9649877C16BA641200BB8DB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9649877E16BA641200BB8DB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9649878016BA641200BB8DB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9649878416BA641300BB8DB1 /* Exercise04-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exercise04-Info.plist"; sourceTree = "<group>"; };
+		9649878616BA641300BB8DB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9649878816BA641300BB8DB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9649878A16BA641300BB8DB1 /* Exercise04-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exercise04-Prefix.pch"; sourceTree = "<group>"; };
+		9649878B16BA641300BB8DB1 /* Exercise04AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise04AppDelegate.h; sourceTree = "<group>"; };
+		9649878C16BA641300BB8DB1 /* Exercise04AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise04AppDelegate.m; sourceTree = "<group>"; };
+		9649878E16BA641300BB8DB1 /* Exercise04ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise04ViewController.h; sourceTree = "<group>"; };
+		9649878F16BA641300BB8DB1 /* Exercise04ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise04ViewController.m; sourceTree = "<group>"; };
+		9649879216BA641300BB8DB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Exercise04ViewController.xib; sourceTree = "<group>"; };
+		9649879916BA69F700BB8DB1 /* note8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = note8.gif; sourceTree = "<group>"; };
+		9649879A16BA69F700BB8DB1 /* piano_do.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_do.wav; sourceTree = "<group>"; };
+		9649879B16BA69F700BB8DB1 /* piano_do2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_do2.wav; sourceTree = "<group>"; };
+		9649879C16BA69F700BB8DB1 /* piano_fa.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_fa.wav; sourceTree = "<group>"; };
+		9649879D16BA69F700BB8DB1 /* piano_mi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_mi.wav; sourceTree = "<group>"; };
+		9649879E16BA69F700BB8DB1 /* piano_ra.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_ra.wav; sourceTree = "<group>"; };
+		9649879F16BA69F700BB8DB1 /* piano_re.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_re.wav; sourceTree = "<group>"; };
+		964987A016BA69F700BB8DB1 /* piano_si.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_si.wav; sourceTree = "<group>"; };
+		964987A116BA69F700BB8DB1 /* piano_so.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_so.wav; sourceTree = "<group>"; };
+		964987AB16BA70B600BB8DB1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9649877516BA641200BB8DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964987AC16BA70B600BB8DB1 /* AudioToolbox.framework in Frameworks */,
+				9649877D16BA641200BB8DB1 /* UIKit.framework in Frameworks */,
+				9649877F16BA641200BB8DB1 /* Foundation.framework in Frameworks */,
+				9649878116BA641300BB8DB1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9649876D16BA641200BB8DB1 = {
+			isa = PBXGroup;
+			children = (
+				964987AB16BA70B600BB8DB1 /* AudioToolbox.framework */,
+				9649878216BA641300BB8DB1 /* Exercise04 */,
+				9649877B16BA641200BB8DB1 /* Frameworks */,
+				9649877916BA641200BB8DB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9649877916BA641200BB8DB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9649877816BA641200BB8DB1 /* Exercise04.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9649877B16BA641200BB8DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9649877C16BA641200BB8DB1 /* UIKit.framework */,
+				9649877E16BA641200BB8DB1 /* Foundation.framework */,
+				9649878016BA641200BB8DB1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9649878216BA641300BB8DB1 /* Exercise04 */ = {
+			isa = PBXGroup;
+			children = (
+				9649879916BA69F700BB8DB1 /* note8.gif */,
+				9649879A16BA69F700BB8DB1 /* piano_do.wav */,
+				9649879B16BA69F700BB8DB1 /* piano_do2.wav */,
+				9649879C16BA69F700BB8DB1 /* piano_fa.wav */,
+				9649879D16BA69F700BB8DB1 /* piano_mi.wav */,
+				9649879E16BA69F700BB8DB1 /* piano_ra.wav */,
+				9649879F16BA69F700BB8DB1 /* piano_re.wav */,
+				964987A016BA69F700BB8DB1 /* piano_si.wav */,
+				964987A116BA69F700BB8DB1 /* piano_so.wav */,
+				9649878B16BA641300BB8DB1 /* Exercise04AppDelegate.h */,
+				9649878C16BA641300BB8DB1 /* Exercise04AppDelegate.m */,
+				9649878E16BA641300BB8DB1 /* Exercise04ViewController.h */,
+				9649878F16BA641300BB8DB1 /* Exercise04ViewController.m */,
+				9649879116BA641300BB8DB1 /* Exercise04ViewController.xib */,
+				9649878316BA641300BB8DB1 /* Supporting Files */,
+			);
+			path = Exercise04;
+			sourceTree = "<group>";
+		};
+		9649878316BA641300BB8DB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9649878416BA641300BB8DB1 /* Exercise04-Info.plist */,
+				9649878516BA641300BB8DB1 /* InfoPlist.strings */,
+				9649878816BA641300BB8DB1 /* main.m */,
+				9649878A16BA641300BB8DB1 /* Exercise04-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9649877716BA641200BB8DB1 /* Exercise04 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9649879616BA641300BB8DB1 /* Build configuration list for PBXNativeTarget "Exercise04" */;
+			buildPhases = (
+				9649877416BA641200BB8DB1 /* Sources */,
+				9649877516BA641200BB8DB1 /* Frameworks */,
+				9649877616BA641200BB8DB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise04;
+			productName = Exercise04;
+			productReference = 9649877816BA641200BB8DB1 /* Exercise04.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9649876F16BA641200BB8DB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9649877216BA641200BB8DB1 /* Build configuration list for PBXProject "Exercise04" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9649876D16BA641200BB8DB1;
+			productRefGroup = 9649877916BA641200BB8DB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9649877716BA641200BB8DB1 /* Exercise04 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9649877616BA641200BB8DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9649878716BA641300BB8DB1 /* InfoPlist.strings in Resources */,
+				9649879316BA641300BB8DB1 /* Exercise04ViewController.xib in Resources */,
+				964987A216BA69F700BB8DB1 /* note8.gif in Resources */,
+				964987A316BA69F700BB8DB1 /* piano_do.wav in Resources */,
+				964987A416BA69F700BB8DB1 /* piano_do2.wav in Resources */,
+				964987A516BA69F700BB8DB1 /* piano_fa.wav in Resources */,
+				964987A616BA69F700BB8DB1 /* piano_mi.wav in Resources */,
+				964987A716BA69F700BB8DB1 /* piano_ra.wav in Resources */,
+				964987A816BA69F700BB8DB1 /* piano_re.wav in Resources */,
+				964987A916BA69F700BB8DB1 /* piano_si.wav in Resources */,
+				964987AA16BA69F700BB8DB1 /* piano_so.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9649877416BA641200BB8DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9649878916BA641300BB8DB1 /* main.m in Sources */,
+				9649878D16BA641300BB8DB1 /* Exercise04AppDelegate.m in Sources */,
+				9649879016BA641300BB8DB1 /* Exercise04ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9649878516BA641300BB8DB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9649878616BA641300BB8DB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9649879116BA641300BB8DB1 /* Exercise04ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9649879216BA641300BB8DB1 /* en */,
+			);
+			name = Exercise04ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9649879416BA641300BB8DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9649879516BA641300BB8DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9649879716BA641300BB8DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exercise04/Exercise04-Prefix.pch";
+				INFOPLIST_FILE = "Exercise04/Exercise04-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9649879816BA641300BB8DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exercise04/Exercise04-Prefix.pch";
+				INFOPLIST_FILE = "Exercise04/Exercise04-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9649877216BA641200BB8DB1 /* Build configuration list for PBXProject "Exercise04" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9649879416BA641300BB8DB1 /* Debug */,
+				9649879516BA641300BB8DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9649879616BA641300BB8DB1 /* Build configuration list for PBXNativeTarget "Exercise04" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9649879716BA641300BB8DB1 /* Debug */,
+				9649879816BA641300BB8DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9649876F16BA641200BB8DB1 /* Project object */;
+}
