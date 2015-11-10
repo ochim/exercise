@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96412A0D16BFBC5F00421C20 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96412A0C16BFBC5F00421C20 /* AudioToolbox.framework */; };
+		964987C916BA88DD00BB8DB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964987C816BA88DD00BB8DB1 /* UIKit.framework */; };
+		964987CB16BA88DD00BB8DB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964987CA16BA88DD00BB8DB1 /* Foundation.framework */; };
+		964987CD16BA88DD00BB8DB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964987CC16BA88DD00BB8DB1 /* CoreGraphics.framework */; };
+		964987D316BA88DD00BB8DB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964987D116BA88DD00BB8DB1 /* InfoPlist.strings */; };
+		964987D516BA88DD00BB8DB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 964987D416BA88DD00BB8DB1 /* main.m */; };
+		964987D916BA88DD00BB8DB1 /* Exercise06AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 964987D816BA88DD00BB8DB1 /* Exercise06AppDelegate.m */; };
+		964987DC16BA88DD00BB8DB1 /* Exercise06ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 964987DB16BA88DD00BB8DB1 /* Exercise06ViewController.m */; };
+		964987DF16BA88DD00BB8DB1 /* Exercise06ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964987DD16BA88DD00BB8DB1 /* Exercise06ViewController.xib */; };
+		964987EF16BA962900BB8DB1 /* maru.png in Resources */ = {isa = PBXBuildFile; fileRef = 964987E516BA962800BB8DB1 /* maru.png */; };
+		964987F016BA962900BB8DB1 /* opening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987E616BA962800BB8DB1 /* opening.wav */; };
+		964987F116BA962900BB8DB1 /* piano_do.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987E716BA962800BB8DB1 /* piano_do.wav */; };
+		964987F216BA962900BB8DB1 /* piano_do2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987E816BA962800BB8DB1 /* piano_do2.wav */; };
+		964987F316BA962900BB8DB1 /* piano_fa.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987E916BA962800BB8DB1 /* piano_fa.wav */; };
+		964987F416BA962900BB8DB1 /* piano_mi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987EA16BA962800BB8DB1 /* piano_mi.wav */; };
+		964987F516BA962900BB8DB1 /* piano_ra.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987EB16BA962800BB8DB1 /* piano_ra.wav */; };
+		964987F616BA962900BB8DB1 /* piano_re.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987EC16BA962800BB8DB1 /* piano_re.wav */; };
+		964987F716BA962900BB8DB1 /* piano_si.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987ED16BA962900BB8DB1 /* piano_si.wav */; };
+		964987F816BA962900BB8DB1 /* piano_so.wav in Resources */ = {isa = PBXBuildFile; fileRef = 964987EE16BA962900BB8DB1 /* piano_so.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96412A0C16BFBC5F00421C20 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		964987C416BA88DD00BB8DB1 /* Exercise06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise06.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		964987C816BA88DD00BB8DB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		964987CA16BA88DD00BB8DB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		964987CC16BA88DD00BB8DB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		964987D016BA88DD00BB8DB1 /* Exercise06-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exercise06-Info.plist"; sourceTree = "<group>"; };
+		964987D216BA88DD00BB8DB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		964987D416BA88DD00BB8DB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		964987D616BA88DD00BB8DB1 /* Exercise06-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exercise06-Prefix.pch"; sourceTree = "<group>"; };
+		964987D716BA88DD00BB8DB1 /* Exercise06AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise06AppDelegate.h; sourceTree = "<group>"; };
+		964987D816BA88DD00BB8DB1 /* Exercise06AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise06AppDelegate.m; sourceTree = "<group>"; };
+		964987DA16BA88DD00BB8DB1 /* Exercise06ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise06ViewController.h; sourceTree = "<group>"; };
+		964987DB16BA88DD00BB8DB1 /* Exercise06ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise06ViewController.m; sourceTree = "<group>"; };
+		964987DE16BA88DD00BB8DB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Exercise06ViewController.xib; sourceTree = "<group>"; };
+		964987E516BA962800BB8DB1 /* maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maru.png; sourceTree = "<group>"; };
+		964987E616BA962800BB8DB1 /* opening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = opening.wav; sourceTree = "<group>"; };
+		964987E716BA962800BB8DB1 /* piano_do.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_do.wav; sourceTree = "<group>"; };
+		964987E816BA962800BB8DB1 /* piano_do2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_do2.wav; sourceTree = "<group>"; };
+		964987E916BA962800BB8DB1 /* piano_fa.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_fa.wav; sourceTree = "<group>"; };
+		964987EA16BA962800BB8DB1 /* piano_mi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_mi.wav; sourceTree = "<group>"; };
+		964987EB16BA962800BB8DB1 /* piano_ra.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_ra.wav; sourceTree = "<group>"; };
+		964987EC16BA962800BB8DB1 /* piano_re.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_re.wav; sourceTree = "<group>"; };
+		964987ED16BA962900BB8DB1 /* piano_si.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_si.wav; sourceTree = "<group>"; };
+		964987EE16BA962900BB8DB1 /* piano_so.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piano_so.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		964987C116BA88DD00BB8DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96412A0D16BFBC5F00421C20 /* AudioToolbox.framework in Frameworks */,
+				964987C916BA88DD00BB8DB1 /* UIKit.framework in Frameworks */,
+				964987CB16BA88DD00BB8DB1 /* Foundation.framework in Frameworks */,
+				964987CD16BA88DD00BB8DB1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		964987B916BA88DD00BB8DB1 = {
+			isa = PBXGroup;
+			children = (
+				964987CE16BA88DD00BB8DB1 /* Exercise06 */,
+				964987C716BA88DD00BB8DB1 /* Frameworks */,
+				964987C516BA88DD00BB8DB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		964987C516BA88DD00BB8DB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				964987C416BA88DD00BB8DB1 /* Exercise06.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		964987C716BA88DD00BB8DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96412A0C16BFBC5F00421C20 /* AudioToolbox.framework */,
+				964987C816BA88DD00BB8DB1 /* UIKit.framework */,
+				964987CA16BA88DD00BB8DB1 /* Foundation.framework */,
+				964987CC16BA88DD00BB8DB1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		964987CE16BA88DD00BB8DB1 /* Exercise06 */ = {
+			isa = PBXGroup;
+			children = (
+				964987E516BA962800BB8DB1 /* maru.png */,
+				964987E616BA962800BB8DB1 /* opening.wav */,
+				964987E716BA962800BB8DB1 /* piano_do.wav */,
+				964987E816BA962800BB8DB1 /* piano_do2.wav */,
+				964987E916BA962800BB8DB1 /* piano_fa.wav */,
+				964987EA16BA962800BB8DB1 /* piano_mi.wav */,
+				964987EB16BA962800BB8DB1 /* piano_ra.wav */,
+				964987EC16BA962800BB8DB1 /* piano_re.wav */,
+				964987ED16BA962900BB8DB1 /* piano_si.wav */,
+				964987EE16BA962900BB8DB1 /* piano_so.wav */,
+				964987D716BA88DD00BB8DB1 /* Exercise06AppDelegate.h */,
+				964987D816BA88DD00BB8DB1 /* Exercise06AppDelegate.m */,
+				964987DA16BA88DD00BB8DB1 /* Exercise06ViewController.h */,
+				964987DB16BA88DD00BB8DB1 /* Exercise06ViewController.m */,
+				964987DD16BA88DD00BB8DB1 /* Exercise06ViewController.xib */,
+				964987CF16BA88DD00BB8DB1 /* Supporting Files */,
+			);
+			path = Exercise06;
+			sourceTree = "<group>";
+		};
+		964987CF16BA88DD00BB8DB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				964987D016BA88DD00BB8DB1 /* Exercise06-Info.plist */,
+				964987D116BA88DD00BB8DB1 /* InfoPlist.strings */,
+				964987D416BA88DD00BB8DB1 /* main.m */,
+				964987D616BA88DD00BB8DB1 /* Exercise06-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		964987C316BA88DD00BB8DB1 /* Exercise06 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964987E216BA88DD00BB8DB1 /* Build configuration list for PBXNativeTarget "Exercise06" */;
+			buildPhases = (
+				964987C016BA88DD00BB8DB1 /* Sources */,
+				964987C116BA88DD00BB8DB1 /* Frameworks */,
+				964987C216BA88DD00BB8DB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise06;
+			productName = Exercise06;
+			productReference = 964987C416BA88DD00BB8DB1 /* Exercise06.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		964987BB16BA88DD00BB8DB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 964987BE16BA88DD00BB8DB1 /* Build configuration list for PBXProject "Exercise06" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 964987B916BA88DD00BB8DB1;
+			productRefGroup = 964987C516BA88DD00BB8DB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				964987C316BA88DD00BB8DB1 /* Exercise06 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		964987C216BA88DD00BB8DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964987D316BA88DD00BB8DB1 /* InfoPlist.strings in Resources */,
+				964987DF16BA88DD00BB8DB1 /* Exercise06ViewController.xib in Resources */,
+				964987EF16BA962900BB8DB1 /* maru.png in Resources */,
+				964987F016BA962900BB8DB1 /* opening.wav in Resources */,
+				964987F116BA962900BB8DB1 /* piano_do.wav in Resources */,
+				964987F216BA962900BB8DB1 /* piano_do2.wav in Resources */,
+				964987F316BA962900BB8DB1 /* piano_fa.wav in Resources */,
+				964987F416BA962900BB8DB1 /* piano_mi.wav in Resources */,
+				964987F516BA962900BB8DB1 /* piano_ra.wav in Resources */,
+				964987F616BA962900BB8DB1 /* piano_re.wav in Resources */,
+				964987F716BA962900BB8DB1 /* piano_si.wav in Resources */,
+				964987F816BA962900BB8DB1 /* piano_so.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		964987C016BA88DD00BB8DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964987D516BA88DD00BB8DB1 /* main.m in Sources */,
+				964987D916BA88DD00BB8DB1 /* Exercise06AppDelegate.m in Sources */,
+				964987DC16BA88DD00BB8DB1 /* Exercise06ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		964987D116BA88DD00BB8DB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964987D216BA88DD00BB8DB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		964987DD16BA88DD00BB8DB1 /* Exercise06ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964987DE16BA88DD00BB8DB1 /* en */,
+			);
+			name = Exercise06ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		964987E016BA88DD00BB8DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		964987E116BA88DD00BB8DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		964987E316BA88DD00BB8DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exercise06/Exercise06-Prefix.pch";
+				INFOPLIST_FILE = "Exercise06/Exercise06-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		964987E416BA88DD00BB8DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exercise06/Exercise06-Prefix.pch";
+				INFOPLIST_FILE = "Exercise06/Exercise06-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		964987BE16BA88DD00BB8DB1 /* Build configuration list for PBXProject "Exercise06" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964987E016BA88DD00BB8DB1 /* Debug */,
+				964987E116BA88DD00BB8DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		964987E216BA88DD00BB8DB1 /* Build configuration list for PBXNativeTarget "Exercise06" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964987E316BA88DD00BB8DB1 /* Debug */,
+				964987E416BA88DD00BB8DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 964987BB16BA88DD00BB8DB1 /* Project object */;
+}
