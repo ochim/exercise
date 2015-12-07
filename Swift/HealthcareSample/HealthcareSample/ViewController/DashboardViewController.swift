@@ -9,9 +9,9 @@
 import UIKit
 
 class DashboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var heights: [HealthItem]? = []
-    var weights: [HealthItem]? = []
-    var pulses: [HealthItem]? = []
+    var heights: Array<AnyObject>? = []
+    var weights: Array<AnyObject>? = []
+    var pulses: Array<AnyObject>? = []
     
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var myTableView: UITableView!
@@ -107,17 +107,17 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         let index: Int = mySegmentedControl.selectedSegmentIndex
         switch index {
         case 0:
-            let height: HealthItem = self.heights![indexPath.row]
+            let height: HealthItem = self.heights![indexPath.row] as! HealthItem
             cell!.textLabel?.text = String(format: "%.2f cm", height.valueString.doubleValue * 100)
             cell!.detailTextLabel?.text = self.formattedStringFromDate(height.startDate)
             
         case 1:
-            let weight: HealthItem = self.weights![indexPath.row]
+            let weight: HealthItem = self.weights![indexPath.row] as! HealthItem
             cell!.textLabel?.text = String(format: "%.2f kg", weight.valueString.doubleValue / 1000)
             cell!.detailTextLabel?.text = self.formattedStringFromDate(weight.startDate)
 
         case 2:
-            let pulse: HealthItem = self.pulses![indexPath.row]
+            let pulse: HealthItem = self.pulses![indexPath.row] as! HealthItem
             cell!.textLabel?.text = String(format: "%.f 拍/分", pulse.valueString.doubleValue)
             cell!.detailTextLabel?.text = self.formattedStringFromDate(pulse.startDate)
         

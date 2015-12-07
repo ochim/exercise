@@ -20,7 +20,7 @@ class HealthItem: NSObject {
         HKHealthStoreUtility.saveHealthValueWithUnit(unit, type: type, valueStr: valueString, startDate: startDate, endDate: endDate, completion: completion)
     }
     
-    func findAllItemsOnHealthcare(completion: (responseObjects:[HealthItem]?, error: NSError?) -> Void) {
+    func findAllItemsOnHealthcare(completion: (responseObjects:Array<AnyObject>?, error: NSError?) -> Void) {
         
         // 取得処理完了時に非同期で呼び出されます。
         HKHealthStoreUtility.findAllHealthValueWithUnit(self.unit, type: self.type , completion: {
@@ -37,7 +37,7 @@ class HealthItem: NSObject {
             NSLog("resultObj : \(responseObj)")
             
             let btUnit: HKUnit = self.unit
-            var healthItems: [HealthItem]? = []
+            var healthItems: Array<AnyObject>? = []
             
             // HealthStoreで使用していた型から値へと復元します。
             for item: HKQuantitySample in responseObj as! [HKQuantitySample] {
