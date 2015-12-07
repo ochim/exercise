@@ -102,7 +102,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // 再利用するCellを取得する.
-        var cell = tableView.dequeueReusableCellWithIdentifier("OutputItemCell")
+        let cell = tableView.dequeueReusableCellWithIdentifier("OutputItemCell")
         
         let index: Int = mySegmentedControl.selectedSegmentIndex
         switch index {

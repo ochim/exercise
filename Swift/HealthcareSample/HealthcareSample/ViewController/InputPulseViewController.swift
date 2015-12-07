@@ -55,16 +55,16 @@ class InputPulseViewController: InputItemViewController,UITextFieldDelegate {
     
     func savePulse() {
         
-        var tempValue: Double = NSString(string: numberField.text!).doubleValue
+        let tempValue: Double = NSString(string: numberField.text!).doubleValue
         
         if (tempValue == 0) {
             print("入力必須")
-            var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: NSLocalizedString("VALIDATION_MESSAGE", comment: "comment"))
+            let builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: NSLocalizedString("VALIDATION_MESSAGE", comment: "comment"))
             self.presentViewController(builder.alertController, animated: true, completion: nil)
             return
         }
         
-        var pulse:Pulse = Pulse()
+        let pulse:Pulse = Pulse()
         pulse.valueString = NSString(format: "\(tempValue)")
         pulse.startDate = NSDate();
         pulse.endDate = NSDate();
@@ -72,13 +72,13 @@ class InputPulseViewController: InputItemViewController,UITextFieldDelegate {
         // ヘルスケアに心拍数データを保存
         pulse.save { (success, error) -> Void in
             if error != nil {
-                var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: error!.localizedDescription)
+                let builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: error!.localizedDescription)
                 self.presentViewController(builder.alertController, animated: true, completion: nil)
                 return
             }
             
             if success {
-                var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: NSLocalizedString("SAVE_ON_HEALTHCARE", comment: "comment"), message: "")
+                let builder:SimpleAlertBuilder = SimpleAlertBuilder(title: NSLocalizedString("SAVE_ON_HEALTHCARE", comment: "comment"), message: "")
                 self.presentViewController(builder.alertController, animated: true, completion: nil)
             }
         }

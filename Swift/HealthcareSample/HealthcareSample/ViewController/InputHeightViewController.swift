@@ -53,16 +53,16 @@ class InputHeightViewController: InputItemViewController,UITextFieldDelegate {
     }
     
     func saveHeight() {
-        var tempValue: Double! = NSString(string: numberField.text!).doubleValue
+        let tempValue: Double! = NSString(string: numberField.text!).doubleValue
         
         if (tempValue == 0) {
             print("入力必須")
-            var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: NSLocalizedString("VALIDATION_MESSAGE", comment: "comment"))
+            let builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: NSLocalizedString("VALIDATION_MESSAGE", comment: "comment"))
             self.presentViewController(builder.alertController, animated: true, completion: nil)
             return
         }
         
-        var height: Height = Height()
+        let height: Height = Height()
         // 値をメートルに変換
         height.valueString = NSString(format: "\(tempValue / 100)")
         height.startDate = NSDate();
@@ -72,13 +72,13 @@ class InputHeightViewController: InputItemViewController,UITextFieldDelegate {
         // 同じ日時で保存しても別データ扱い
         height.save { (success, error) -> Void in
             if error != nil {
-                var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: error!.localizedDescription)
+                let builder:SimpleAlertBuilder = SimpleAlertBuilder(title: "", message: error!.localizedDescription)
                 self.presentViewController(builder.alertController, animated: true, completion: nil)
                 return
             }
             
             if success {
-                var builder:SimpleAlertBuilder = SimpleAlertBuilder(title: NSLocalizedString("SAVE_ON_HEALTHCARE", comment: "comment"), message: "")
+                let builder:SimpleAlertBuilder = SimpleAlertBuilder(title: NSLocalizedString("SAVE_ON_HEALTHCARE", comment: "comment"), message: "")
                 self.presentViewController(builder.alertController, animated: true, completion: nil)
             }
         }
